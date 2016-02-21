@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style>
+            BODY {width : 400px; min-height:250px;}
+        </style>
+    </head>
+    <body>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<h2 class="text-center">옵션</h2>
+			<hr>
+			<form class="form-inline">
+				<h3>자동로그인</h3>
+				<div class="form-group">
+					<div class="checkbox">
+						<label>
+							<input id="auto_chk" type="checkbox" value="">
+							켜기
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<input id="auto_id" class="form-control" type="text" placeholder="BB id"></input>
+				</div>
+				<div class="form-group">
+					<input id="auto_pw"  class="form-control" type="password" placeholder="BB password"></input>
+				</div>
+				<div class="form-group">
+					<button id="auto_btn" type="button" class="btn btn-success">저장</button>
+				</div>
+				<div id="auto_msg" class="form-group"></div>
+			</form>
+			<div class="alert alert-danger">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>주의!</strong>
+				<li>켜기 상태에서 ID혹은 Password가 틀렸거나 입력되지 않았을경우 무한 새로고침 현상이 일어날 수 있습니다.
+				</li>
+				<li>
+				아이디와 비밀번호는 <strong>절대</strong> 수집되지 않습니다.
+				<li>
+				<strong>자동로그인을 끄시려면 비밀번호를 지우고 켜기를 체크 해제해 주세요</strong>
+				<li>
+				<s>뒤의 친구를 조심하세요</s>
+				</li>
+			</div>
+		</div>
+	</div>
+	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="popup.js"></script>
+</html>
